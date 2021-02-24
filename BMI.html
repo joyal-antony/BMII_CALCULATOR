@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="script.js"></script>
+  <title>BMI CALCULATOR</title>
+</head>
+
+<body>
+  <h1>Body Mass Index Calculator</h1>
+
+  <select type="multiple" id="units" onchange="unit_check(this.value)">
+    <option value="metric">metric</option>
+    <option value="imperial">imperial</option>
+  </select>
+
+  <p>Enter your height:
+    <input type="text" id="height" />
+    <span id="height_span"></span>
+  </p>
+
+  <p>Enter your weight:
+    <input type="text" id="weight" />
+    <span id="weight_span"></span>
+  </p>
+
+  <input type="button" value="CalculateBMI" onclick="CalculateBMI()" />
+  <h1>Your BMI is: <span id="output">?</span></h1>
+
+  <h2>This means you are: <span id='comment'></span> </h2>
+</body>
+
+</html>
